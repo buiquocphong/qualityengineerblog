@@ -13,15 +13,15 @@ module.exports = {
         // Can be used for e.g. JSONLD
         siteHeadline: `Trang chia sẻ kiến thức về quản lý chất lượng`,
         // Will be used to generate absolute URLs for og:image etc.
-        siteUrl: `https://minimal-blog.lekoarts.de`,
+        siteUrl: `https://qualityengineer.org`,
         // Used for SEO
-        siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
+        siteDescription: `Trang chia sẻ các kiến thức vế chất lượng, hệ thống quản lý chất lượng, quản lý quá trình. Ứng dụng các phần mềm như R và Minitab vào việc quản lý quá trình.`,
         // Will be set on the <html /> tag
         siteLanguage: `en`,
         // Used for og:image and must be placed inside the `static` folder
         siteImage: `/banner.jpg`,
         // Twitter Handle
-        author: `@lekoarts_de`,
+        author: `@jerry_bui`,
         // Links displayed in the header on the right side
   },
   plugins: [
@@ -42,14 +42,20 @@ module.exports = {
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/jerry_bui`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `Facebook`,
+            url: `https://www.facebook.com/Quanlity-Engineer-105950921447520`,
           },
         ],
       },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+          shortname: `qualityengineer`
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -61,9 +67,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `Quality Engineer - Jerry-Bui-blog`,
+        short_name: `quality-engineer`,
+        description: `Trang chia sẻ các kiến thức vế chất lượng, hệ thống quản lý chất lượng, quản lý quá trình. Ứng dụng các phần mềm như R và Minitab vào việc quản lý quá trình.`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
