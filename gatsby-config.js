@@ -6,7 +6,23 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+        // Used for the title template on pages other than the index site
+        siteTitle: `Jerry Bui`,
+        // Default title of the page
+        siteTitleAlt: `Quality Engineer - Jerry-Bui-blog`,
+        // Can be used for e.g. JSONLD
+        siteHeadline: `Trang chia sẻ kiến thức về quản lý chất lượng`,
+        // Will be used to generate absolute URLs for og:image etc.
+        siteUrl: `https://minimal-blog.lekoarts.de`,
+        // Used for SEO
+        siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
+        // Will be set on the <html /> tag
+        siteLanguage: `en`,
+        // Used for og:image and must be placed inside the `static` folder
+        siteImage: `/banner.jpg`,
+        // Twitter Handle
+        author: `@lekoarts_de`,
+        // Links displayed in the header on the right side
   },
   plugins: [
     {
