@@ -13,10 +13,10 @@ type SEOProps = {
 }
 
 const SEO = ({
-  title = ``,
-  description = ``,
-  pathname = ``,
-  image = ``,
+  title = `Quality Engineer`,
+  description = `Trang chia sẻ các kiến thức vế chất lượng, hệ thống quản lý chất lượng, quản lý quá trình. Ứng dụng các phần mềm như R và Minitab vào việc quản lý quá trình.`,
+  pathname = `quality-engineer`,
+  image = `quality-engineer-image`,
   children = null,
   canonicalUrl = ``,
 }: SEOProps) => {
